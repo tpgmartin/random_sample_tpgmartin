@@ -1,0 +1,2 @@
+from random_sample_tpgmartin.function_random_sample import sample_from_distribution
+from random_sample_tpgmartin.oop_random_sample import *
