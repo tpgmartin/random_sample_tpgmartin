@@ -1,5 +1,5 @@
 import numpy as np
-from prettytable import PrettyTable
+from tabulate import tabulate
 
 class Distribution(object):
 
@@ -17,13 +17,9 @@ class Distribution(object):
         min = np.round(np.min(self.sample), decimals=2)
         max = np.round(np.max(self.sample), decimals=2)
 
-        summary = PrettyTable(["Statistic", "Value"])
-        summary.add_row(["mean", mean])
-        summary.add_row(["std", std])
-        summary.add_row(["min", min])
-        summary.add_row(["max", max])
+        table = [["mean", mean], ["std", std], ["min", min], ["max", max]]
 
-        print(summary)
+        print(tabulate(table, headers=["Statistic", "Value"]))
 
 class Binomial(Distribution):
 

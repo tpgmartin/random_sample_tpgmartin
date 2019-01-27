@@ -9,5 +9,5 @@ setup(name="random_sample_tpgmartin",
       packages=find_packages(),
       install_requires=[
         "numpy",
-        "prettytable"
+        "tabulate"
       ])
