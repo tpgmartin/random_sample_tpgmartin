@@ -65,4 +65,4 @@ poisson.summarise()
 ## Dependencies
 
 * `numpy`
-* `prettytable`
+* `tabulate`
